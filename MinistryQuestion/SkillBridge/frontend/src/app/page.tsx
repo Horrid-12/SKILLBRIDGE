@@ -55,7 +55,7 @@ export default function Home() {
           <Button variant="primary" size="lg" href="/career-readiness">
             Check My Readiness
           </Button>
-          <Button variant="default" size="lg" onClick={() => setIsDemoModalOpen(true)}>
+          <Button variant="primary" size="lg" onClick={() => setIsDemoModalOpen(true)}>
             <Rocket className="w-4 h-4" /> Watch Demo
           </Button>
         </div>
