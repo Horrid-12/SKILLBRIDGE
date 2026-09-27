@@ -63,7 +63,7 @@ const config: Config = {
         },
         /* legacy accent families revalued to new palette (Phase 4: delete) */
         cyber: {
-          cyan: "#0f766e",
+          cyan: "#06b6d4",
           emerald: "#15803d",
           violet: "#4338ca",
           amber: "#b45309",
@@ -73,13 +73,13 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "hero-mesh":
-          "radial-gradient(at 100% 0%, rgba(42,75,141,0.15) 0px, transparent 50%), radial-gradient(at 0% 100%, rgba(15,118,110,0.12) 0px, transparent 50%)",
+          "radial-gradient(at 100% 0%, rgba(42,75,141,0.15) 0px, transparent 50%), radial-gradient(at 0% 100%, rgba(6,182,212,0.12) 0px, transparent 50%)",
         "card-glow":
           "radial-gradient(circle at 50% 0%, rgba(42,75,141,0.08), transparent 70%)",
         "fit-glow":
-          "radial-gradient(circle at 20% 0%, rgba(15,118,110,0.12), transparent 55%), radial-gradient(circle at 85% 100%, rgba(42,75,141,0.10), transparent 50%)",
+          "radial-gradient(circle at 20% 0%, rgba(6,182,212,0.12), transparent 55%), radial-gradient(circle at 85% 100%, rgba(42,75,141,0.10), transparent 50%)",
         "fit-gradient": "linear-gradient(135deg, #0f766e 0%, #2a4b8d 100%)",
-        "fit-soft": "linear-gradient(135deg, rgba(15,118,110,0.08), rgba(42,75,141,0.08))",
+        "fit-soft": "linear-gradient(135deg, rgba(6,182,212,0.08), rgba(42,75,141,0.08))",
       },
       animation: {
         "pulse-subtle": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",

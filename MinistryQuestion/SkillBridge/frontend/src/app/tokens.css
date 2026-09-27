@@ -16,67 +16,67 @@
    --color-cyan: #00E5FF;
 
    /* --- CTA / primary action (deep teal) --- */
-   --sb-cta: #0f766e;
-   --sb-cta-hover: #0d5d56;
-   --sb-cta-bg: var(--sb-cta);
-   --sb-cta-bg-hover: var(--sb-cta-hover);
-   --sb-cta-text: var(--color-charcoal);   /* 3a.2.1: charcoal, not white */
+--sb-cta: #06b6d4;
+  --sb-cta-hover: #0891b2;
+  --sb-cta-bg: var(--sb-cta);
+  --sb-cta-bg-hover: var(--sb-cta-hover);
+  --sb-cta-text: var(--color-charcoal);
 
-   /* --- 3a.2.2: cyan text on light surfaces --- */
-   --color-cyan-700: #00808F;
+  /* --- 3a.2.2: cyan text on light surfaces --- */
+  --color-cyan-700: #00808F;
 
-   /* --- 3a.2.4: functional borders --- */
-   --border-functional: #98948C;
+  /* --- 3a.2.4: functional borders --- */
+  --border-functional: #98948C;
 
-   /* --- brand (navy) --- */
-   --sb-brand: #2a4b8d;
-   --sb-brand-hover: #1f3a6e;
-   --sb-brand-tint: #e4eaf6;
+  /* --- brand (navy) --- */
+  --sb-brand: #2a4b8d;
+  --sb-brand-hover: #1f3a6e;
+  --sb-brand-tint: #e4eaf6;
 
-   /* --- status role tokens (light theme) --- */
-   --status-healthy-dot: var(--color-cyan);
-   --status-healthy-bg: #E6FCFF;
-   --status-healthy-border: rgba(0, 229, 255, 0.30);
-   --status-warning-dot: var(--color-sun-yellow);
-   --status-warning-bg: #FFF9E6;
-   --status-warning-border: rgba(255, 196, 0, 0.30);
-   --status-critical-dot: var(--color-deep-red);
-   --status-critical-bg: #F8E8E8;
-   --status-critical-border: rgba(183, 28, 28, 0.30);
-   --status-neutral-bg: #F6F6F4;
-   --status-neutral-border: rgba(229, 228, 226, 0.30);
-   --status-text: var(--color-charcoal);   /* 3a.3.1: charcoal for all 4 roles */
+  /* --- status role tokens (light theme) --- */
+  --status-healthy-dot: var(--color-cyan);
+  --status-healthy-bg: #E6FCFF;
+  --status-healthy-border: rgba(0, 229, 255, 0.30);
+  --status-warning-dot: var(--color-sun-yellow);
+  --status-warning-bg: #FFF9E6;
+  --status-warning-border: rgba(255, 196, 0, 0.30);
+  --status-critical-dot: var(--color-deep-red);
+  --status-critical-bg: #F8E8E8;
+  --status-critical-border: rgba(183, 28, 28, 0.30);
+  --status-neutral-bg: #F6F6F4;
+  --status-neutral-border: rgba(229, 228, 226, 0.30);
+  --status-text: var(--color-charcoal); /* single text token, all 4 roles */
 
-   /* --- surfaces (dark defaults) --- */
-   --sb-canvas: #0f172a;
-   --sb-surface: #1e293b;
-   --sb-surface-raised: #334155;
-   --sb-hairline: rgba(255, 255, 255, 0.08);
+  /* --- surfaces (dark defaults) --- */
+  --sb-canvas: #0f172a;
+  --sb-surface: #1e293b;
+  --sb-surface-raised: #334155;
+  --sb-hairline: rgba(255, 255, 255, 0.08);
 
-   /* --- text --- */
-   --sb-ink: #f8fafc;
-   --sb-ink-muted: #94a3b8;
-   --sb-ink-faint: #64748b;
+  /* --- text --- */
+  --sb-ink: #f8fafc;
+  --sb-ink-muted: #94a3b8;
+  --sb-ink-faint: #64748b;
 
-   /* --- legacy aliases revalued to new semantics --- */
-   --sb-fit-bg: var(--sb-cta);
-   --sb-fit-text: var(--color-charcoal);
-   --sb-fit-gradient: linear-gradient(135deg, var(--sb-cta) 0%, var(--sb-brand) 100%);
-   --sb-focus-ring: rgba(15, 118, 110, 0.5);
-   --sb-halo: color-mix(in srgb, var(--sb-cta) 12%, transparent);
+  /* --- legacy aliases revalued to new semantics --- */
+  --sb-fit-bg: var(--sb-cta);
+  --sb-fit-text: var(--color-charcoal);
+  --sb-fit-gradient: linear-gradient(135deg, var(--sb-cta) 0%, var(--sb-brand) 100%);
+  --sb-focus-ring: rgba(6, 182, 212, 0.5);
+  --sb-halo: color-mix(in srgb, var(--sb-cta) 12%, transparent);
 }
 
 html[data-theme="light"] {
-   --sb-canvas: #f8fafc;
-   --sb-surface: #f1f5f9;
-   --sb-surface-raised: #ffffff;
-   --sb-hairline: #e2e8f0;
-   --sb-ink: #0f172a;
-   --sb-ink-muted: #475569;
-   --sb-ink-faint: #64748b;
-   --sb-focus-ring: rgba(15, 118, 110, 0.45);
-   --sb-halo: color-mix(in srgb, var(--sb-cta) 10%, transparent);
-   color-scheme: light;
+  --sb-canvas: #f8fafc;
+  --sb-surface: #f1f5f9;
+  --sb-surface-raised: #ffffff;
+  --sb-hairline: #e2e8f0;
+  --sb-ink: #0f172a;
+  --sb-ink-muted: #475569;
+  --sb-ink-faint: #64748b;
+  --sb-focus-ring: rgba(6, 182, 212, 0.45);
+  --sb-halo: color-mix(in srgb, var(--sb-cta) 10%, transparent);
+  color-scheme: light;
 }
 
 /* --- 3a.5.1: dark-theme values for the status block / functional-border

@@ -103,7 +103,7 @@ export default function Home() {
         {[
           { icon: BookOpen, value: "1,247", label: "Courses", color: "text-sun-strong" },
           { icon: Zap, value: "389", label: "Skill Gaps", color: "text-crimson" },
-          { icon: Target, value: "67.4%", label: "Placement", color: "text-cyan-accent" },
+          { icon: Target, value: "67.4%", label: "Placement", color: "text-cta" },
           { icon: Building2, value: "856", label: "Partners", color: "text-ink" },
         ].map((s) => (
           <div key={s.label} className="glass-card px-3 py-3 flex items-center gap-3">
@@ -154,7 +154,7 @@ export default function Home() {
               className={`glass-card glass-card-interactive p-3.5 block group ${m.hot ? "ring-fit" : ""}`}
             >
               <m.icon className="w-5 h-5 block mb-1 text-ink-muted group-hover:text-neon transition-colors" />
-              <h3 className={`text-xs font-bold transition-colors ${m.hot ? "text-cyan-accent" : "text-ink group-hover:text-neon"}`}>{m.name}</h3>
+              <h3 className={`text-xs font-bold transition-colors ${m.hot ? "text-cta" : "text-ink group-hover:text-neon"}`}>{m.name}</h3>
               <p className="text-[11px] text-ink-faint mt-0.5">{m.desc}</p>
             </Link>
           ))}
@@ -211,7 +211,7 @@ export default function Home() {
               ].map((s) => (
                 <div key={s.n} className="p-3 rounded-lg bg-raised border border-line text-center">
                   <s.i className="w-5 h-5 mx-auto block text-ink-muted" />
-                  <span className="text-[10px] font-mono text-cyan-accent">{s.n}</span>
+                  <span className="text-[10px] font-mono text-cta">{s.n}</span>
                   <p className="text-[11px] font-bold text-ink mt-0.5">{s.t}</p>
                 </div>
               ))}
