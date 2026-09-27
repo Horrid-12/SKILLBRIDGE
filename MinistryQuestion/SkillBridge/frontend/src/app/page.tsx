@@ -35,16 +35,16 @@ export default function Home() {
       <section className="relative text-center py-6">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[500px] h-[200px] bg-[var(--sb-halo)] blur-[100px] rounded-full pointer-events-none -z-10" />
 
-        <div className="inline-flex items-center gap-1.5 badge-aligned px-3 py-1 rounded-full text-[11px] font-semibold mb-3">
-          <span className="w-1.5 h-1.5 rounded-full bg-cyan-accent animate-pulse"></span>
-          Live Intelligence Active
-        </div>
+<div className="inline-flex items-center gap-1.5 status-healthy px-3 py-1 rounded-full text-[11px] font-semibold mb-3">
+           <span className="w-1.5 h-1.5 rounded-full bg-cta animate-pulse"></span>
+           Live Intelligence Active
+         </div>
 
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-ink max-w-3xl mx-auto leading-[1.1] mb-3">
-          Know Your{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-sun to-neon">
-            Career Readiness
-          </span>
+         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-ink max-w-3xl mx-auto leading-[1.1] mb-3">
+           Know Your{" "}
+           <span className="text-ink">
+             Career Readiness
+           </span>
         </h1>
 
         <p className="text-sm text-ink-muted max-w-xl mx-auto mb-5">
