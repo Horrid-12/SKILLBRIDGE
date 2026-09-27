@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import SihDemoModal from "@/components/SihDemoModal";
-import { Button, Tag, SectionHeader } from "@/components/ui";
+import { Button, Tag, SectionHeader, Card } from "@/components/ui";
 import {
   Rocket,
   BookOpen,
@@ -58,6 +58,43 @@ export default function Home() {
           <Button variant="default" size="lg" onClick={() => setIsDemoModalOpen(true)}>
             <Rocket className="w-4 h-4" /> Watch Demo
           </Button>
+        </div>
+      </section>
+
+      {/* 3-Path Triage */}
+      <section>
+        <SectionHeader icon={<Target className="w-5 h-5" />} title="Choose Your Path" subtitle="Three ways to use SkillBridge" className="mb-3" />
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <Card>
+            <div className="p-5 space-y-3">
+              <GraduationCap className="w-7 h-7 text-ink-muted" />
+              <div>
+                <h3 className="text-sm font-bold text-ink">For Students</h3>
+                <p className="text-xs text-ink-muted mt-0.5">Check your job readiness and find the courses you need.</p>
+              </div>
+              <Button variant="primary" size="sm" href="/career-readiness">Check Readiness</Button>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-5 space-y-3">
+              <Landmark className="w-7 h-7 text-ink-muted" />
+              <div>
+                <h3 className="text-sm font-bold text-ink">For Government</h3>
+                <p className="text-xs text-ink-muted mt-0.5">Track placement metrics and policy impact across districts.</p>
+              </div>
+              <Button variant="primary" size="sm" href="/dashboard">Open Dashboard</Button>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-5 space-y-3">
+              <Building2 className="w-7 h-7 text-ink-muted" />
+              <div>
+                <h3 className="text-sm font-bold text-ink">For Employers</h3>
+                <p className="text-xs text-ink-muted mt-0.5">Find skilled candidates from our partner pool and validate curriculum.</p>
+              </div>
+              <Button variant="primary" size="sm" href="/employers">View Partners</Button>
+            </div>
+          </Card>
         </div>
       </section>
 
